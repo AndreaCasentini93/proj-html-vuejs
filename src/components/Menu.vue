@@ -1,14 +1,21 @@
 <template>
     <nav>
         <div class="d-flex justify-content-between align-items-center container">
+            <!-- LOGO -->
             <a href="#">
                 <img src="../assets/images/dark-logo.png" alt="Logo MaxCoach">
             </a>
+            <!-- /LOGO -->
+
+            <!-- LINKS MENU -->
             <ul class="d-flex align-items-center">
                 <li v-for="link, index in menuLinks" :key="index" class="d-flex align-items-center links_in_menu">
                     <a :href="link.url" class="menu_link">{{ link.text }} <i v-if="link.dropdowns" class="fas fa-chevron-down"></i></a>
                 </li>
             </ul>
+            <!-- /LINKS MENU -->
+
+            <!-- SOCIAL MENU -->
             <ul class="d-flex align-items-center menu_socials">
                 <li v-for="social, index in menuSocials" :key="index" class="d-flex align-items-center">
                     <a :href="social.url" class="social_link">
@@ -16,6 +23,7 @@
                     </a>
                 </li>
             </ul>
+            <!-- /SOCIAL MENU -->
         </div>
     </nav>
 </template>
