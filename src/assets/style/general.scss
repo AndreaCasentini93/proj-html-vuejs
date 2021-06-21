@@ -1,6 +1,20 @@
+@import '~@fontsource/roboto/index.css';
+@import '~@fontsource/roboto/700.css';
+@import '~@fontsource/caveat/index.css';
+@import '~@fontsource/caveat/700.css';
+@import './variables.scss';
+@import './mixins.scss';
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+body {
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-family: 'Caveat';
+}
