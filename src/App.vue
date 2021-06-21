@@ -9,7 +9,7 @@
     <!-- /MAIN -->
 
     <!-- FOOTER -->
-    <Footer :socials="manuSocials" :explore="exploreLinks" :information="informationLinks"/>
+    <Footer :socials="manuSocials" :contacts="contactsMaxCoach" :explore="exploreLinks" :information="informationLinks"/>
     <!-- /FOOTER -->
   </div>
 </template>
@@ -78,6 +78,11 @@ export default {
           url: '#'
         }
       ],
+      contactsMaxCoach: {
+        address: '382 NE 191st ST # 8739 Miami, FL 33179-3899',
+        phone: '+1(305) 547-9909 (9am - 5pm Est, Monday - Friday)',
+        email: 'support@maxcoach.com'
+      },
       exploreLinks: [
         {
           text: 'Start here',
