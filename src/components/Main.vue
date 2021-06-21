@@ -1,6 +1,6 @@
 <template>
-    <main>
-        Main
+    <main class="d-flex justify-content-center align-items-center">
+        CONTENUTO DELLA PAGINA
     </main>
 </template>
 
@@ -14,4 +14,11 @@ export default {
     @import '../assets/style/variables.scss';
     @import '../assets/style/mixins.scss';
 
+    main {
+        width: 100%;
+        height: 150px;
+        font-size: 30px;
+        color: white;
+        background-color: black;
+    }
 </style>
