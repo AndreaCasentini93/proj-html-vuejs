@@ -5,13 +5,15 @@
                 <img src="../assets/images/dark-logo.png" alt="Logo MaxCoach">
             </a>
             <ul class="d-flex align-items-center">
-                <li>
-                    <a href="#" class="menu_link">Link <i class="fas fa-chevron-down"></i></a>
+                <li v-for="link, index in menuLinks" :key="index" class="d-flex align-items-center links_in_menu">
+                    <a :href="link.url" class="menu_link">{{ link.text }} <i v-if="link.dropdowns" class="fas fa-chevron-down"></i></a>
                 </li>
             </ul>
             <ul class="d-flex align-items-center menu_socials">
-                <li>
-                    <a href="#" class="menu_social">Social</a>
+                <li v-for="social, index in menuSocials" :key="index" class="d-flex align-items-center">
+                    <a :href="social.url" class="social_link">
+                        <i :class="social.class"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -20,7 +22,11 @@
 
 <script>
 export default {
-    name: 'Menu'
+    name: 'Menu',
+    props: {
+        menuLinks: Array,
+        menuSocials: Array
+    }
 }
 </script>
 
@@ -41,11 +47,23 @@ export default {
             }
 
             ul {
+                height: 100%;
+
                 li {
-                    margin: 0 20px;
+                    &.links_in_menu {
+                        height: 100%;
+                        margin: 0 15px;
+                        border-bottom: 2px solid $invisible-color;
+                        @include transition-type-1(border-bottom);
+                    }
+
+                    &.links_in_menu:hover,
+                    &.links_in_menu.active {
+                        border-bottom: 2px solid lighten($link-color, 45%);
+                    }
 
                     a {
-                        i {
+                        .fas.fa-chevron-down {
                             margin-left: 3px;
                             vertical-align: middle;
                             font-size: 10px;
@@ -53,11 +71,17 @@ export default {
                     }
 
                     .menu_link {
+                        font-size: 14px;
                         color: $link-color;
+                        @include transition-type-1(color);
+
+                        &:hover {
+                            color: lighten($link-color, 45%);
+                        }
                     }
 
-                    .menu_social {
-                        color: $social-color;
+                    .social_link {
+                        @include menu-social-media;
                     }
                 }
             }

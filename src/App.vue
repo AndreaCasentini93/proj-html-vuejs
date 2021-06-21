@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- HEADER -->
-    <Header />
+    <Header :links="menuLinks" :socials="manuSocials"/>
     <!-- /HEADER -->
 
     <!-- MAIN -->
@@ -31,30 +31,36 @@ export default {
       menuLinks: [
         {
           text: 'Home',
-          url: '#'
+          url: '#',
+          dropdowns: true
         },
         {
           text: 'Pages',
-          url: '#'
+          url: '#',
+          dropdowns: true
         },
         {
           text: 'Courses',
-          url: '#'
+          url: '#',
+          dropdowns: true
         },
         {
           text: 'Features',
-          url: '#'
+          url: '#',
+          dropdowns: true
         },
         {
           text: 'Blog',
-          url: '#'
+          url: '#',
+          dropdowns: true
         },
         {
           text: 'Shop',
-          url: '#'
+          url: '#',
+          dropdowns: true
         }
       ],
-      manuSocials1: [
+      manuSocials: [
         {
           class: 'fab fa-twitter',
           url: '#'

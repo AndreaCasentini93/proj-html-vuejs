@@ -5,7 +5,7 @@
         <!-- /COUNTDOWN -->
 
         <!-- MENU -->
-        <Menu />
+        <Menu :menuLinks="links" :menuSocials="socials"/>
         <!-- /MENU -->
 
         <!-- JUMBOTRON -->
@@ -21,6 +21,10 @@ import Jumbotron from './Jumbotron.vue';
 
 export default {
     name: 'Header',
+    props: {
+        links: Array,
+        socials: Array
+    },
     components: {
         Countdown,
         Menu,
