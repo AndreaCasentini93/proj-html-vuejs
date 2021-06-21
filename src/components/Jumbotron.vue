@@ -1,12 +1,12 @@
 <template>
-    <main>
-        Main
-    </main>
+    <div>
+        Jumbotron
+    </div>
 </template>
 
 <script>
 export default {
-    name: 'Main'
+    name: 'Jumbotron'
 }
 </script>
 

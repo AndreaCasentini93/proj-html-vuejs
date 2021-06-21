@@ -1,15 +1,36 @@
 <template>
     <header>
-        Header
+        <!-- COUNTDOWN -->
+        <Countdown />
+        <!-- /COUNTDOWN -->
+
+        <!-- MENU -->
+        <Menu />
+        <!-- /MENU -->
+
+        <!-- JUMBOTRON -->
+        <Jumbotron />
+        <!-- /JUMBOTRON -->
     </header>
 </template>
 
 <script>
+import Countdown from './Countdown.vue';
+import Menu from './Menu.vue';
+import Jumbotron from './Jumbotron.vue';
+
 export default {
-    name: 'Header'
+    name: 'Header',
+    components: {
+        Countdown,
+        Menu,
+        Jumbotron
+    }
 }
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/style/variables.scss';
+    @import '../assets/style/mixins.scss';
 
 </style>
