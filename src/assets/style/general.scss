@@ -28,16 +28,7 @@ a {
 }
 
 .btn_type_1 {
-    padding: 7px 40px;
-    border-radius: 5px;
-    font-weight: 700;
-    color: $btn-1-color;
-    background-color: $btn-1-bg-color;
+    @include button-layout($btn-1-color, $btn-1-bg-color, $btn-1-color, $btn-1-bg-color-hover);
     @include transition-type-1(color);
     @include transition-type-1(background-color);
-
-    &:hover {
-        color: $btn-1-color;
-        background-color: $btn-1-bg-color-hover;
-    }
 }
