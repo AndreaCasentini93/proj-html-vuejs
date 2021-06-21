@@ -1,0 +1,5 @@
+@import './variables.scss';
+
+@mixin transition-type-1($property: all) {
+    transition: $property .3s linear;
+}
