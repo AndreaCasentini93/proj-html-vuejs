@@ -6,7 +6,12 @@
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    props: {
+        socials: Array,
+        explore: Array,
+        information: Array
+    }
 }
 </script>
 

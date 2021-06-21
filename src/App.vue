@@ -9,7 +9,7 @@
     <!-- /MAIN -->
 
     <!-- FOOTER -->
-    <Footer />
+    <Footer :socials="manuSocials" :explore="exploreLinks" :information="informationLinks"/>
     <!-- /FOOTER -->
   </div>
 </template>
