@@ -1,21 +1,14 @@
 <template>
     <div id="jumbotron" class="position-relative d-flex justify-content-center align-items-center">
         <!-- IMAGES -->
-        <img class="form_1" src="../assets/images/artist-shape-02.png" alt="form_1">
-        <img class="form_2" src="../assets/images/artist-shape-01.png" alt="form_2">
-        <img class="feather" src="../assets/images/artist-shape-04.png" alt="feather">
-        <img class="colors_1" src="../assets/images/artist-shape-05.png" alt="colors_1">
-        <img class="photo" src="../assets/images/artist-hero-image-04.jpg" alt="photo">
-        <img class="profile" src="../assets/images/artist-hero-image-03.png" alt="profile">
-        <img class="points" src="../assets/images/artist-shape-03.png" alt="points">
-        <img class="colors_2" src="../assets/images/artist-hero-image-02.jpg" alt="colors_2">
-        <img class="monkey" src="../assets/images/artist-hero-image-01.jpg" alt="monkey">
+        <img v-for="image, index in images" :key="index" :class="image.name" :src="image.src" :alt="image.name">
         <!-- /IMAGES -->
 
         <!-- TEXT -->
         <div class="text-center">
             <h2>Hello, Im Matin</h2>
             <h3>Artist Coaching And Mentoring<br>Might Be For You</h3>
+            <a href="#" class="btn_type_2">Get started today</a>
         </div>
         <!-- /TEXT -->
     </div>
@@ -23,7 +16,49 @@
 
 <script>
 export default {
-    name: 'Jumbotron'
+    name: 'Jumbotron',
+    data: function() {
+        return {
+            images: [
+                {
+                    name: 'form_1',
+                    src: require('../assets/images/artist-shape-02.png')
+                },
+                {
+                    name: 'form_2',
+                    src: require('../assets/images/artist-shape-01.png')
+                },
+                {
+                    name: 'feather',
+                    src: require('../assets/images/artist-shape-04.png')
+                },
+                {
+                    name: 'colors_1',
+                    src: require('../assets/images/artist-shape-05.png')
+                },
+                {
+                    name: 'photo',
+                    src: require('../assets/images/artist-hero-image-04.jpg')
+                },
+                {
+                    name: 'profile',
+                    src: require('../assets/images/artist-hero-image-03.png')
+                },
+                {
+                    name: 'points',
+                    src: require('../assets/images/artist-shape-03.png')
+                },
+                {
+                    name: 'colors_2',
+                    src: require('../assets/images/artist-hero-image-02.jpg')
+                },
+                {
+                    name: 'monkey',
+                    src: require('../assets/images/artist-hero-image-01.jpg')
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -103,6 +138,7 @@ export default {
 
             h3 {
                 line-height: 1.5;
+                margin-bottom: 50px;
                 font-size: 31px;
                 font-weight: 700;
                 color: $sub-title-color;

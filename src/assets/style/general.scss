@@ -30,7 +30,13 @@ a {
 }
 
 .btn_type_1 {
-    @include button-layout($btn-1-color, $btn-1-bg-color, $btn-1-color, $btn-1-bg-color-hover);
+    @include button-layout-1($btn-1-color, $btn-1-bg-color, $btn-1-color, $btn-1-bg-color-hover);
+    @include transition-type-1(color);
+    @include transition-type-1(background-color);
+}
+
+.btn_type_2 {
+    @include button-layout-2($btn-1-color, $btn-1-bg-color, $btn-1-color, $btn-1-bg-color-hover);
     @include transition-type-1(color);
     @include transition-type-1(background-color);
 }
