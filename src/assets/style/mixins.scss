@@ -4,7 +4,7 @@
 @mixin button-layout-1($type_color: unset, $type_background: unset, $hover_color: unset, $hover_background: unset) {
     padding: 7px 40px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     color: $type_color;
     background-color: $type_background;
@@ -34,14 +34,14 @@
 
 // Transitions
 @mixin transition-type-1($transition_property: all) {
-    transition: $transition_property .3s linear;
+    transition: $transition_property .3s;
 }
 
 // Social Media
 @mixin menu-social-media {
     margin: 0 8px;
     vertical-align: middle;
-    font-size: 17px;
+    font-size: 19px;
     color: $social-color;
     @include transition-type-1(color);
 

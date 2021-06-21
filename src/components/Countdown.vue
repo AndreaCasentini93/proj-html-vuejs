@@ -26,7 +26,7 @@ export default {
 
         div {
             margin: 13px 15px;
-            font-size: 12px;
+            font-size: 13px;
             color: $base-color;
         }
 

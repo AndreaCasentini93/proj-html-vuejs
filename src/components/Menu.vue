@@ -16,13 +16,7 @@
             <!-- /LINKS MENU -->
 
             <!-- SOCIAL MENU -->
-            <ul class="d-flex align-items-center menu_socials hidden_1199px">
-                <li v-for="social, index in menuSocials" :key="index" class="d-flex align-items-center">
-                    <a :href="social.url" class="social_link">
-                        <i :class="social.class"></i>
-                    </a>
-                </li>
-            </ul>
+            <Socials :menuSocials="menuSocials"/>
             <!-- /SOCIAL MENU -->
 
             <!-- DROPDOWN MENU-->
@@ -45,11 +39,16 @@
 </template>
 
 <script>
+import Socials from './Socials.vue';
+
 export default {
     name: 'Menu',
     props: {
         menuLinks: Array,
         menuSocials: Array
+    },
+    components: {
+        Socials
     },
     data: function() {
         return {

@@ -7,7 +7,7 @@
                     <h4>Address</h4>
                     <ul>
                         <li>
-                            {{ contacts.adress }}
+                            {{ contacts.address }}
                         </li>
                         <li>
                             {{ contacts.phone }}
@@ -16,13 +16,7 @@
                             {{ contacts.email }}
                         </li>
                     </ul>
-                    <ul class="d-flex align-items-center menu_socials">
-                        <li v-for="social, index in socials" :key="index" class="d-flex align-items-center">
-                            <a :href="social.url" class="social_link">
-                                <i :class="social.class"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <Socials :menuSocials="socials"/>
                 </div>
                 <!-- /COLUMN 1 -->
 
@@ -61,13 +55,17 @@
                 </div>
                 <!-- /COLUMN 4 -->
 
-                <div class="col-12 text-center">&#xa9; 2020 Maxcoach. All Rights Reserved</div>
+                <!-- RESERVED -->
+                <p class="col-12 text-center">&#xa9; 2020 Maxcoach. All Rights Reserved</p>
+                <!-- /RESERVED -->
             </div>
         </div>
     </footer>
 </template>
 
 <script>
+import Socials from './Socials.vue';
+
 export default {
     name: 'Footer',
     props: {
@@ -75,6 +73,9 @@ export default {
         contacts: Object,
         explore: Array,
         information: Array
+    },
+    components: {
+        Socials
     },
     data: function() {
         return {
@@ -106,7 +107,7 @@ export default {
 
     footer {
         .container {
-            padding-top: 50px;
+            padding-top: 90px;
             padding-bottom: 20px;
 
             .row {
@@ -116,23 +117,69 @@ export default {
                         margin-bottom: 50px;
                     }
 
-                    .social_link {
-                        @include menu-social-media;
-                        margin-top: 25px;
+                    h4 {
+                        margin-bottom: 10px;
+                        font-size: 17px;
+                        font-weight: 700;
+                        color: $sub-title-color;
+
+                        .ashtag {
+                            font-size: 15px;
+                            color: $ashtag-color;
+                        }
                     }
 
                     ul {
                         li {
+                            margin-bottom: 15px;
+                            font-size: 14px;
+                            color: $base-color;
+
                             a {
+                                font-size: 14px;
+                                color: $base-color;
+                                @include transition-type-1(color);
+
+                                &:hover {
+                                    color: darken($link-color, 20%);
+                                }
+
                                 img {
                                     max-width: 100px;
                                     margin-top: 20px;
                                     margin-right: 20px;
+                                    @include transition-type-1(opacity);
+
+                                    &:hover {
+                                        opacity: .8;
+                                    }
                                 }
                             }
                         }
                     }
                 }
+
+                p {
+                    font-size: 14px;
+                    color: $base-color;
+                }
+            }
+        }
+        @media screen and (max-width: 767px) {
+            h4 {
+                font-size: 15px !important;
+            }
+            .ashtag {
+                font-size: 14px !important;
+            }
+            li {
+                font-size: 12px !important;
+            }
+            a {
+                font-size: 12px !important;
+            }
+            p {
+                font-size: 12px !important;
             }
         }
     }
