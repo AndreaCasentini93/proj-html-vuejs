@@ -5,13 +5,13 @@
                 <img src="../assets/images/dark-logo.png" alt="Logo MaxCoach">
             </a>
             <ul class="d-flex align-items-center">
-                <li v-for="n in 6" :key="n">
-                    <a href="#">Link</a>
+                <li>
+                    <a href="#" class="menu_link">Link <i class="fas fa-chevron-down"></i></a>
                 </li>
             </ul>
-            <ul class="d-flex align-items-center">
-                <li v-for="n in 4" :key="n">
-                    <a href="#">Social</a>
+            <ul class="d-flex align-items-center menu_socials">
+                <li>
+                    <a href="#" class="menu_social">Social</a>
                 </li>
             </ul>
         </div>
@@ -42,7 +42,23 @@ export default {
 
             ul {
                 li {
-                    margin: 0 10px;
+                    margin: 0 20px;
+
+                    a {
+                        i {
+                            margin-left: 3px;
+                            vertical-align: middle;
+                            font-size: 10px;
+                        }
+                    }
+
+                    .menu_link {
+                        color: $link-color;
+                    }
+
+                    .menu_social {
+                        color: $social-color;
+                    }
                 }
             }
         }
