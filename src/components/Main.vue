@@ -18,6 +18,7 @@ export default {
         width: 100%;
         height: 150px;
         font-size: 30px;
+        font-weight: 700;
         color: white;
         background-color: black;
     }
