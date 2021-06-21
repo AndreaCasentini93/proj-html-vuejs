@@ -2,7 +2,6 @@
 @import '~@fontsource/roboto/index.css';
 @import '~@fontsource/roboto/700.css';
 @import '~@fontsource/caveat/index.css';
-@import '~@fontsource/caveat/700.css';
 $base-font: 'Roboto';
 $title-font: 'Caveat';
 
@@ -10,8 +9,10 @@ $title-font: 'Caveat';
 $base-color: #797979;
 $logo-color: #374a5e;
 $link-color: #1b1b1b;
+$sub-title-color: #333333;
 $social-color: #797979;
 $invisible-color: #00000000;
+$title-color: #76CAF2;
 
 // Background Colors
 $bg-countdown: #F5F5F5;
