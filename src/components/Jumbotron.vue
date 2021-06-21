@@ -1,7 +1,7 @@
 <template>
     <div id="jumbotron" class="position-relative d-flex justify-content-center align-items-center">
         <!-- IMAGES -->
-        <img v-for="image, index in images" :key="index" :class="image.name" :src="image.src" :alt="image.name">
+        <img v-for="image, index in images" :key="index" :class="image.name" :src="image.src" :alt="image.name" class="hidden_1199px">
         <!-- /IMAGES -->
 
         <!-- TEXT -->
@@ -139,9 +139,63 @@ export default {
             h3 {
                 line-height: 1.5;
                 margin-bottom: 50px;
-                font-size: 31px;
+                font-size: 28px;
                 font-weight: 700;
                 color: $sub-title-color;
+            }
+        }
+
+        @media screen and (max-width: 1355px) {
+            .form_1 {
+                width: 660px;
+            }
+            
+            .form_2 {
+                width: 500px;
+            }
+
+            .photo {
+                width: 220px;
+            }
+
+            .profile {
+                width: 160px;
+            }
+
+            .monkey {
+                width: 140px;
+            }
+
+            .points {
+                width: 242px;
+            }
+
+            .feather {
+                width: 60px;
+            }
+
+            .colors_1 {
+                width: 230px;
+            }
+
+            .colors_2 {
+                width: 200px;
+            }
+        }
+        @media screen and (max-width: 1199px) {
+            .hidden_1199px {
+                display: none !important;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            div {
+                h2 {
+                    font-size: 30px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
             }
         }
     }

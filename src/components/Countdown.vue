@@ -1,7 +1,7 @@
 <template>
     <div id="countdown" class="d-flex justify-content-center align-items-center">
-        <div>Starts TOMORROW! Our biggest event of the year...</div>
-        <div class="countdown-time">
+        <div class="hidden_1199px">Starts TOMORROW! Our biggest event of the year...</div>
+        <div class="countdown_time">
             <i class="far fa-clock"></i>
             <span>00 : 00 : 00 : 00</span>
         </div>
@@ -30,13 +30,19 @@ export default {
             color: $base-color;
         }
 
-        .countdown-time {
+        .countdown_time {
             font-size: 14px;
             font-weight: 700;
             color: $logo-color;
             
             i {
                 margin-right: 10px;
+            }
+        }
+
+        @media screen and (max-width: 1199px) {
+            .hidden_1199px {
+                display: none !important;
             }
         }
     }

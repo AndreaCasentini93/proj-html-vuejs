@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <div class="d-flex justify-content-between align-items-center container">
+        <div class="position-relative d-flex justify-content-between align-items-center container">
             <!-- LOGO -->
             <a href="#">
                 <img src="../assets/images/dark-logo.png" alt="Logo MaxCoach">
@@ -8,7 +8,7 @@
             <!-- /LOGO -->
 
             <!-- LINKS MENU -->
-            <ul class="d-flex align-items-center">
+            <ul class="d-flex align-items-center hidden_1199px">
                 <li v-for="link, index in menuLinks" :key="index" class="d-flex align-items-center links_in_menu">
                     <a :href="link.url" class="menu_link">{{ link.text }} <i v-if="link.dropdowns" class="fas fa-chevron-down"></i></a>
                 </li>
@@ -16,7 +16,7 @@
             <!-- /LINKS MENU -->
 
             <!-- SOCIAL MENU -->
-            <ul class="d-flex align-items-center menu_socials">
+            <ul class="d-flex align-items-center menu_socials hidden_1199px">
                 <li v-for="social, index in menuSocials" :key="index" class="d-flex align-items-center">
                     <a :href="social.url" class="social_link">
                         <i :class="social.class"></i>
@@ -24,6 +24,22 @@
                 </li>
             </ul>
             <!-- /SOCIAL MENU -->
+
+            <!-- DROPDOWN MENU-->
+            <i class="fas fa-bars" @click.prevent="!openMenu? openMenu = true: openMenu = false"></i>
+            <div v-if="openMenu" class="dropdown_menu">
+                <ul>
+                    <li v-for="link, index in menuLinks" :key="index">
+                        <a :href="link.url" class="menu_link">{{ link.text }} <i v-if="link.dropdowns" class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li v-for="social, index in menuSocials" :key="index" class="d-inline-block">
+                        <a :href="social.url" class="social_link">
+                            <i :class="social.class"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /DROPDOWN MENU-->
         </div>
     </nav>
 </template>
@@ -34,6 +50,11 @@ export default {
     props: {
         menuLinks: Array,
         menuSocials: Array
+    },
+    data: function() {
+        return {
+            openMenu: false
+        }
     }
 }
 </script>
@@ -90,6 +111,46 @@ export default {
 
                     .social_link {
                         @include menu-social-media;
+                    }
+                }
+            }
+
+            .fas.fa-bars {
+                display: none;
+                font-size: 25px;
+            }
+
+            .dropdown_menu {
+                display: none;
+                position: absolute;
+                bottom: -360%;
+                right: 10px;
+                width: 200px;
+                min-height: 320px;
+                background-color: white;
+                z-index: 2;
+
+                & > ul > li {
+                    margin: 15px 10px;
+                }
+            }
+
+            @media screen and (max-width: 1199px) {
+                .hidden_1199px {
+                    display: none !important;
+                }
+
+                .fas.fa-bars {
+                    display: block;
+                }
+
+                .dropdown_menu {
+                    display: block;
+
+                    ul {
+                        li.d-inline-block {
+                            margin: 15px 2px;
+                        }
                     }
                 }
             }
