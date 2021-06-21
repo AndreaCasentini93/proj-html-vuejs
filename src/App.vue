@@ -25,6 +25,94 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data:function() {
+    return {
+      menuLinks: [
+        {
+          text: 'Home',
+          url: '#'
+        },
+        {
+          text: 'Pages',
+          url: '#'
+        },
+        {
+          text: 'Courses',
+          url: '#'
+        },
+        {
+          text: 'Features',
+          url: '#'
+        },
+        {
+          text: 'Blog',
+          url: '#'
+        },
+        {
+          text: 'Shop',
+          url: '#'
+        }
+      ],
+      manuSocials1: [
+        {
+          class: 'fab fa-twitter',
+          url: '#'
+        },
+        {
+          class: 'fab fa-facebook-f',
+          url: '#'
+        },
+        {
+          class: 'fab fa-instagram',
+          url: '#'
+        },
+        {
+          class: 'fab fa-linkedin',
+          url: '#'
+        }
+      ],
+      exploreLinks: [
+        {
+          text: 'Start here',
+          url: '#'
+        },
+        {
+          text: 'Success stor',
+          url: '#'
+        },
+        {
+          text: 'Blog',
+          url: '#'
+        },
+        {
+          text: 'Courses',
+          url: '#'
+        },
+        {
+          text: 'Contact us',
+          url: '#'
+        }
+      ],
+      informationLinks: [
+        {
+          text: 'Membership',
+          url: '#'
+        },
+        {
+          text: 'Purchase guide',
+          url: '#'
+        },
+        {
+          text: 'Privacy policy',
+          url: '#'
+        },
+        {
+          text: 'Terms of services',
+          url: '#'
+        }
+      ],
+    }
   }
 }
 </script>
