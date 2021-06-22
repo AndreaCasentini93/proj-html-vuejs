@@ -22,7 +22,7 @@
 
                 <!-- COLUMN 2 -->
                 <div class="col-12 col-md-4 col-lg-2">
-                    <h4>Address</h4>
+                    <h4>Explore</h4>
                     <ul>
                         <li v-for="link, index in explore" :key="index">
                             <a :href="link.url">{{ link.text }}</a>
@@ -33,7 +33,7 @@
 
                 <!-- COLUMN 3 -->
                 <div class="col-12 col-md-4 col-lg-2">
-                    <h4>Address</h4>
+                    <h4>Information</h4>
                     <ul>
                         <li v-for="link, index in information" :key="index">
                             <a :href="link.url">{{ link.text }}</a>
