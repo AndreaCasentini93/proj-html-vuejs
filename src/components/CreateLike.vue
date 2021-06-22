@@ -38,6 +38,11 @@ export default {
     @import '../assets/style/variables.scss';
     @import '../assets/style/mixins.scss';
 
+    section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     p {
         margin-bottom: 50px;
         color: $base-color;

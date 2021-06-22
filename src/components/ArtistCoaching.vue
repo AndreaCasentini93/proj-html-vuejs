@@ -100,9 +100,9 @@ export default {
 
         .form_2 {
             top: 10%;
-            left: -5%;
+            left: -10%;
             transform: rotate(230deg);
-            width: 450px;
+            width: 570px;
         }
 
         .jagged_circle {
