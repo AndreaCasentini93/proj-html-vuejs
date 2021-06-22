@@ -1,12 +1,12 @@
 <template>
     <section>
-        CREATE LIKES
+        CREATE LIKE
     </section>
 </template>
 
 <script>
 export default {
-    name: 'CreateLikes'
+    name: 'CreateLike'
 }
 </script>
 

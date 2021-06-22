@@ -5,7 +5,7 @@
         <!-- /ARTIST COACHING -->
 
         <!-- CREATE LIKES -->
-        <CreateLikes />
+        <CreateLike />
         <!-- /CREATE LIKES -->
 
         <!-- YOUTUBE -->
@@ -36,13 +36,13 @@
 
 <script>
 import ArtistCoaching from './ArtistCoaching.vue';
-import CreateLikes from './CreateLikes.vue';
+import CreateLike from './CreateLike.vue';
 
 export default {
     name: 'Main',
     components: {
         ArtistCoaching,
-        CreateLikes
+        CreateLike
     }
 }
 </script>
