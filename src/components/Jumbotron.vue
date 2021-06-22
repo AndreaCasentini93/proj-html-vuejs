@@ -12,7 +12,7 @@
 
         <!-- TEXT -->
         <div class="text-center">
-            <h2>Hello, Im Matin</h2>
+            <h2>Hello, Im Martin</h2>
             <h3>Artist Coaching And Mentoring<br>Might Be For You</h3>
             <a href="#" class="btn_type_2">Get started today</a>
         </div>
