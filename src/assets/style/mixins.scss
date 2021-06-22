@@ -61,3 +61,12 @@
     font-size: 35px;
     color: $title-color;
 }
+
+// Ring
+@mixin ring {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 10px solid #ECC5AB;
+    border-radius: 50%;
+}
