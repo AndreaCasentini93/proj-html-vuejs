@@ -9,9 +9,9 @@
             <!-- /TITLES -->
 
             <!-- SLIDER -->
-            <div class="d-flex slider">
+            <div class="d-flex justify-content-center slider">
                 <!-- BEFORE SLIDE -->
-                <div class="slide" @click="changeSlide(slides[beforeId].id)">
+                <div class="slide hidden_991px" @click="changeSlide(slides[beforeId].id)">
                     <h4>{{ slides[beforeId].title }}</h4>
                     <p>{{ slides[beforeId].text }}</p>
                     <div class="d-flex">
@@ -39,7 +39,7 @@
                 <!-- /CURRENT SLIDE -->
 
                 <!-- AFTER SLIDE -->
-                <div class="slide" @click="changeSlide(slides[afterId].id)">
+                <div class="slide hidden_991px" @click="changeSlide(slides[afterId].id)">
                     <h4>{{ slides[afterId].title }}</h4>
                     <p>{{ slides[afterId].text }}</p>
                     <div class="d-flex">
@@ -102,19 +102,16 @@ export default {
     methods: {
         changeSlide: function(id) {
             this.currentId = id;
-            console.log('Corrente', this.currentId);
             if (id + 1 > this.slides.length - 1) {
                 this.afterId = 0;
             } else {
                 this.afterId = id + 1;
             }
-            console.log('After', this.afterId);
             if (this.afterId + 1 > this.slides.length - 1) {
                 this.beforeId = 0;
             } else {
                 this.beforeId = this.afterId + 1;
             }
-            console.log('Before', this.beforeId);
         }
     }
 }
@@ -213,5 +210,47 @@ export default {
                 }
             }
         }
+    }
+
+    @media screen and (max-width: 991px) {
+
+        .hidden_991px {
+            display: none !important;;
+        }
+
+        .slide {
+            width: 70% !important;
+        }
+
+        h2 {
+            font-size: 30px !important;
+        }
+
+        h3 {
+            font-size: 20px !important;
+        }
+
+        h4 {
+            font-size: 15px !important;
+        }
+
+        h5 {
+            font-size: 11px !important;
+        }
+
+        h6 {
+            font-size: 11px !important;
+        }
+
+        p {
+            font-size: 12px !important;
+        }
+    }
+    @media screen and (max-width: 767px) {
+
+        .slide {
+            width: 100% !important;
+        }
+
     }
 </style>
