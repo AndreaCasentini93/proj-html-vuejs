@@ -17,7 +17,7 @@
         <!-- /TESTIMONIALS -->
 
         <!-- COURSES -->
-        <section>ONLINE COURSES</section>
+        <Courses />
         <!-- /COURSES -->
 
         <!-- ARTICLES -->
@@ -39,6 +39,7 @@ import ArtistCoaching from './ArtistCoaching.vue';
 import CreateLike from './CreateLike.vue';
 import Youtube from './Youtube.vue';
 import Testimonials from './Testimonials.vue';
+import Courses from './Courses.vue';
 
 export default {
     name: 'Main',
@@ -46,7 +47,8 @@ export default {
         ArtistCoaching,
         CreateLike,
         Youtube,
-        Testimonials
+        Testimonials,
+        Courses
     }
 }
 </script>
