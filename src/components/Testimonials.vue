@@ -75,23 +75,23 @@ export default {
                     text: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for peaple like me.',
                     avatarImage: require('../assets/images/artist-testimonial-avatar-04.jpg'),
                     avatarName: 'Mina Hollace',
-                    avatarTask: '/FreeLancer'
+                    avatarTask: '/ FreeLancer'
                 },
                 {
                     id: 1,
-                    title: 'Titolo 1',
-                    text: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for peaple like me.',
-                    avatarImage: require('../assets/images/artist-testimonial-avatar-04.jpg'),
-                    avatarName: 'Mina Hollace',
-                    avatarTask: '/FreeLancer'
+                    title: 'Professional team of specialists and appassionate mentors at reach',
+                    text: 'I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
+                    avatarImage: require('../assets/images/artist-testimonial-avatar-01.jpg'),
+                    avatarName: 'Madley Pondor',
+                    avatarTask: '/ IT Specialist'
                 },
                 {
                     id: 2,
-                    title: 'Titolo 2',
-                    text: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for peaple like me.',
-                    avatarImage: require('../assets/images/artist-testimonial-avatar-04.jpg'),
-                    avatarName: 'Mina Hollace',
-                    avatarTask: '/ Freelancer'
+                    title: 'It\'s a choice of quality for people with special need',
+                    text: 'I\'m a very strict person so I require everything to be organized and neat. Then, I\'ll be able to make things right and shine. MaxCoach guys just got me.',
+                    avatarImage: require('../assets/images/artist-testimonial-avatar-02.jpg'),
+                    avatarName: 'Florence Themes',
+                    avatarTask: '/ Multimedia Admin'
                 }
             ],
             currentId: 0,
@@ -136,7 +136,7 @@ export default {
 
             h3 {
                 line-height: 1.2;
-                margin-bottom: 50px;
+                margin-bottom: 40px;
                 font-size: 25px;
                 font-weight: 700;
                 color: $sub-title-color;
@@ -145,10 +145,10 @@ export default {
 
         .slider {
             .slide {
-                width: calc((100% / 3) - 30px);
+                width: calc((100% / 3) - 40px);
                 padding: 35px;
                 border-radius: 5px;
-                margin: 0 15px;
+                margin: 0 20px;
                 background-color: #FFFFFF;
                 cursor: pointer;
                 @include transition-type-1(transform);
@@ -164,7 +164,7 @@ export default {
 
                 h4 {
                     line-height: 1.8;
-                    font-size: 14px;
+                    font-size: 14.5px;
                     font-weight: 700;
                     color: $sub-title-color;
                 }
