@@ -1,6 +1,12 @@
 <template>
     <div id="jumbotron" class="position-relative d-flex justify-content-center align-items-center">
         <!-- IMAGES -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="202" fill="#76CAF2" class="cloud_1 hidden_1199px">
+            <path class="elementor-shape-fill" d="M139.374 198.088c16.328 8.906 51.35-1.087 58.304-39.038 7.15-39.022-13.182-40.052-9.633-54.248 14.243-21.15 16.782-48.14 2.028-64.387-36.503-38.024-45.629 7.604-76.048-20.28C101.727 7.837 83.1-6.735 56.23 3.405 18.239 17.74 27.33 47.659 27.33 69.313c0 7.624-24.216 21.957-26.87 41.573-3.346 24.734 12.168 57.29 26.87 68.443 23.322 26.363 59.318 20.28 75.541 11.154 13.931-7.836 25.35 1.52 36.503 7.605z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="202" fill="#F5C500" class="cloud_2 hidden_1199px">
+            <path class="elementor-shape-fill" d="M139.374 198.088c16.328 8.906 51.35-1.087 58.304-39.038 7.15-39.022-13.182-40.052-9.633-54.248 14.243-21.15 16.782-48.14 2.028-64.387-36.503-38.024-45.629 7.604-76.048-20.28C101.727 7.837 83.1-6.735 56.23 3.405 18.239 17.74 27.33 47.659 27.33 69.313c0 7.624-24.216 21.957-26.87 41.573-3.346 24.734 12.168 57.29 26.87 68.443 23.322 26.363 59.318 20.28 75.541 11.154 13.931-7.836 25.35 1.52 36.503 7.605z"/>
+        </svg>
         <img v-for="image, index in images" :key="index" :class="image.name + ' ' + image.class" :src="image.src" :alt="image.name">
         <!-- /IMAGES -->
 
@@ -84,6 +90,20 @@ export default {
             position: absolute;
         }
 
+        .cloud_1 {
+            position: absolute;
+            top: 40%;
+            left: 3%;
+            transform: scale(2);
+        }
+
+        .cloud_2 {
+            position: absolute;
+            right: 23%;
+            bottom: 10%;
+            transform: scale(0.8);
+        }
+
         .form_1 {
             top: 0;
             left: 0;
@@ -156,6 +176,11 @@ export default {
         }
 
         @media screen and (max-width: 1355px) {
+
+            .cloud {
+                transform: scale(1.5);
+            }
+
             .form_1 {
                 width: 660px;
             }

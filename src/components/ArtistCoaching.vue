@@ -140,5 +140,25 @@ export default {
                 }
             }
         }
+
+        @media screen and (max-width: 767px) {
+            div {
+                h2 {
+                    font-size: 30px !important;
+                }
+
+                h3 {
+                    font-size: 20px !important;
+                }
+
+                h4 {
+                    font-size: 15px !important;
+                }
+
+                p {
+                    font-size: 12px !important;
+                }
+            }
+        }
     }
 </style>
