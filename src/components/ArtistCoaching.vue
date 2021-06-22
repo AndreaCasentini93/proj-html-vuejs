@@ -10,11 +10,16 @@
             <!-- /TITLES -->
 
             <!-- SERVICES -->
-            <div class="d-flex flex-wrap services_box">
-                <div>ciao</div>
-                <div>ciao</div>
-                <div>ciao</div>
-                <div>ciao</div>
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <div class="row">
+                        <div v-for="service, index in services" :key="index" class="col-12 col-md-6 col-lg-3 service_box">
+                            <img :src="service.image" :alt="service.title">
+                            <h4>{{ service.title }}</h4>
+                            <p>{{ service.paragraph }}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- /SERVICES -->
         </div>
@@ -39,6 +44,28 @@ export default {
                     name: 'string',
                     src: require('../assets/images/maxcoach-shape-14.png')
                 }
+            ],
+            services: [
+                {
+                    image: require('../assets/images/artist-box-image-01.png'),
+                    title: 'Online Coures',
+                    paragraph: 'Online art coaching now offers you a very powerfull way to redesignyour artist mind.'
+                },
+                {
+                    image: require('../assets/images/artist-box-image-02.png'),
+                    title: 'One to One',
+                    paragraph: 'Getting the necessary calarity about the current state to halp you improve your ability.'
+                },
+                {
+                    image: require('../assets/images/artist-box-image-03.png'),
+                    title: 'Anywhere',
+                    paragraph: 'Access to valuable and portable program which allow you to setup and live anywhere you want.'
+                },
+                {
+                    image: require('../assets/images/artist-box-image-04.png'),
+                    title: 'On Time',
+                    paragraph: 'Punctuality is our top priority because it\'s an essential criteria to assess a program quality.'
+                }
             ]
         }
     }
@@ -50,11 +77,11 @@ export default {
     @import '../assets/style/mixins.scss';
 
     section {
-        height: 500px;
         overflow: hidden;
 
-        img {
+        & > img {
             position: absolute;
+            z-index: -1;
         }
 
         .form_2 {
@@ -93,12 +120,23 @@ export default {
                 }
             }
 
-            .services_box {
-                padding: 0 150px;
+            .service_box {
+                img {
+                    max-height: 90px;
+                    max-width: 130px;
+                    margin-bottom: 25px;
+                    margin-top: 30px;
+                }
 
-                div {
-                    width: calc((100% / 4) - 40px);
-                    margin: 0 20px;
+                h4 {
+                    margin-bottom: 15px;
+                    font-size: 17px;
+                    color: $sub-title-color;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: $base-color;
                 }
             }
         }

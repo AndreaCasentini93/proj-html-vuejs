@@ -1,7 +1,7 @@
 <template>
     <div id="jumbotron" class="position-relative d-flex justify-content-center align-items-center">
         <!-- IMAGES -->
-        <img v-for="image, index in images" :key="index" :class="image.name" :src="image.src" :alt="image.name" class="hidden_1199px">
+        <img v-for="image, index in images" :key="index" :class="image.name + ' ' + image.class" :src="image.src" :alt="image.name">
         <!-- /IMAGES -->
 
         <!-- TEXT -->
@@ -22,39 +22,48 @@ export default {
             images: [
                 {
                     name: 'form_1',
-                    src: require('../assets/images/artist-shape-02.png')
+                    src: require('../assets/images/artist-shape-02.png'),
+                    class: ''
                 },
                 {
                     name: 'form_2',
-                    src: require('../assets/images/artist-shape-01.png')
+                    src: require('../assets/images/artist-shape-01.png'),
+                    class: ''
                 },
                 {
                     name: 'feather',
-                    src: require('../assets/images/artist-shape-04.png')
+                    src: require('../assets/images/artist-shape-04.png'),
+                    class: ''
                 },
                 {
                     name: 'colors_1',
-                    src: require('../assets/images/artist-shape-05.png')
+                    src: require('../assets/images/artist-shape-05.png'),
+                    class: 'hidden_1199px'
                 },
                 {
                     name: 'photo',
-                    src: require('../assets/images/artist-hero-image-04.jpg')
+                    src: require('../assets/images/artist-hero-image-04.jpg'),
+                    class: 'hidden_1199px'
                 },
                 {
                     name: 'profile',
-                    src: require('../assets/images/artist-hero-image-03.png')
+                    src: require('../assets/images/artist-hero-image-03.png'),
+                    class: ''
                 },
                 {
                     name: 'points',
-                    src: require('../assets/images/artist-shape-03.png')
+                    src: require('../assets/images/artist-shape-03.png'),
+                    class: 'hidden_1199px'
                 },
                 {
                     name: 'colors_2',
-                    src: require('../assets/images/artist-hero-image-02.jpg')
+                    src: require('../assets/images/artist-hero-image-02.jpg'),
+                    class: 'hidden_1199px'
                 },
                 {
                     name: 'monkey',
-                    src: require('../assets/images/artist-hero-image-01.jpg')
+                    src: require('../assets/images/artist-hero-image-01.jpg'),
+                    class: 'hidden_1199px'
                 }
             ]
         }
@@ -132,6 +141,7 @@ export default {
         }
 
         div {
+            z-index: 1;
             h2 {
                 @include section-title-40px;
             }
