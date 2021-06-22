@@ -26,7 +26,7 @@
                     <li v-for="link, index in menuLinks" :key="index">
                         <a :href="link.url" class="menu_link">{{ link.text }} <i v-if="link.dropdowns" class="fas fa-chevron-down"></i></a>
                     </li>
-                    <li v-for="social, index in menuSocials" :key="index" class="d-inline-block">
+                    <li v-for="social, index in menuSocials" :key="index + menuLinks.length" class="d-inline-block">
                         <a :href="social.url" class="social_link">
                             <i :class="social.class"></i>
                         </a>
