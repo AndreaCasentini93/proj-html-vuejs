@@ -29,7 +29,7 @@
         <!-- /EVENTS -->
 
         <!-- NEWSLETTER -->
-        <section>NEWSLETTER</section>
+        <Newsletter @userEmail="enterEmail"/>
         <!-- /NEWSLETTER -->
     </main>
 </template>
@@ -40,6 +40,7 @@ import CreateLike from './CreateLike.vue';
 import Youtube from './Youtube.vue';
 import Testimonials from './Testimonials.vue';
 import Courses from './Courses.vue';
+import Newsletter from './Newsletter.vue';
 
 export default {
     name: 'Main',
@@ -48,7 +49,19 @@ export default {
         CreateLike,
         Youtube,
         Testimonials,
-        Courses
+        Courses,
+        Newsletter
+    },
+    data: function() {
+        return {
+            clientEmail: ''
+        }
+    },
+    methods: {
+        enterEmail: function(val) {
+            this.clientEmail = val;
+            this.$emit('userEmail', this.clientEmail);
+        }
     }
 }
 </script>

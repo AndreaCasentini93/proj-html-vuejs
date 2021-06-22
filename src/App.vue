@@ -5,7 +5,7 @@
     <!-- /HEADER -->
 
     <!-- MAIN -->
-    <Main />
+    <Main @userEmail="enterEmail"/>
     <!-- /MAIN -->
 
     <!-- FOOTER -->
@@ -123,6 +123,12 @@ export default {
           url: '#'
         }
       ],
+      userEmail: ''
+    }
+  },
+  methods: {
+    enterEmail: function(val) {
+      this.userEmail = val;
     }
   }
 }
