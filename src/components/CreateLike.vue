@@ -54,7 +54,7 @@ export default {
 
         h3 {
             line-height: 1.5;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             font-size: 35px;
             font-weight: 700;
             color: $sub-title-color;
@@ -74,7 +74,6 @@ export default {
 
                 h3 {
                     font-size: 20px !important;
-                    margin-bottom: 10px !important;
                 }
 
                 p {

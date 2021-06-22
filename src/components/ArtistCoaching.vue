@@ -10,8 +10,8 @@
         <div class="container">
             <!-- TITLES -->
             <div class="text-center">
-                <h2>Hello, Im Matin</h2>
-                <h3>Artist Coaching And Mentoring<br>Might Be For You</h3>
+                <h2>Artist Coaching</h2>
+                <h3>I understand what it takes to create.<br>I can help you with</h3>
             </div>
             <!-- /TITLES -->
 
