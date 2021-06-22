@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fontsource/caveat": "^4.4.5",
+    "@fontsource/londrina-shadow": "^4.4.5",
     "@fontsource/roboto": "^4.4.5",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "axios": "^0.21.1",
