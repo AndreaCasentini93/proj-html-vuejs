@@ -13,7 +13,7 @@
         <!-- /YOUTUBE -->
 
         <!-- TESTIMONIALS -->
-        <section>TESTIMONIALS</section>
+        <Testimonials />
         <!-- /TESTIMONIALS -->
 
         <!-- COURSES -->
@@ -38,13 +38,15 @@
 import ArtistCoaching from './ArtistCoaching.vue';
 import CreateLike from './CreateLike.vue';
 import Youtube from './Youtube.vue';
+import Testimonials from './Testimonials.vue';
 
 export default {
     name: 'Main',
     components: {
         ArtistCoaching,
         CreateLike,
-        Youtube
+        Youtube,
+        Testimonials
     }
 }
 </script>
