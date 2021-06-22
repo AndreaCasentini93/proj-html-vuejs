@@ -1,65 +1,63 @@
 <template>
     <section>
-        <div class="container">
-            <!-- TITLES -->
-            <div class="text-center">
-                <h2>Testimonials</h2>
-                <h3>Why do people love me?</h3>
-            </div>
-            <!-- /TITLES -->
-
-            <!-- SLIDER -->
-            <div class="d-flex justify-content-center slider">
-                <!-- BEFORE SLIDE -->
-                <div class="slide hidden_991px" @click="changeSlide(slides[beforeId].id)">
-                    <h4>{{ slides[beforeId].title }}</h4>
-                    <p>{{ slides[beforeId].text }}</p>
-                    <div class="d-flex">
-                        <img :src="slides[beforeId].avatarImage" :alt="slides[beforeId].avatarName">
-                        <div>
-                            <h5>{{ slides[beforeId].avatarName }}</h5>
-                            <h6>{{ slides[beforeId].avatarTask }}</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- /BEFORE SLIDE -->
-
-                <!-- CURRENT SLIDE -->
-                <div class="slide">
-                    <h4>{{ slides[currentId].title }}</h4>
-                    <p>{{ slides[currentId].text }}</p>
-                    <div class="d-flex">
-                        <img :src="slides[currentId].avatarImage" :alt="slides[currentId].avatarName">
-                        <div>
-                            <h5>{{ slides[currentId].avatarName }}</h5>
-                            <h6>{{ slides[currentId].avatarTask }}</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- /CURRENT SLIDE -->
-
-                <!-- AFTER SLIDE -->
-                <div class="slide hidden_991px" @click="changeSlide(slides[afterId].id)">
-                    <h4>{{ slides[afterId].title }}</h4>
-                    <p>{{ slides[afterId].text }}</p>
-                    <div class="d-flex">
-                        <img :src="slides[afterId].avatarImage" :alt="slides[afterId].avatarName">
-                        <div>
-                            <h5>{{ slides[afterId].avatarName }}</h5>
-                            <h6>{{ slides[afterId].avatarTask }}</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- /AFTER SLIDE -->
-            </div>
-            <!-- SLIDER -->
-
-            <!-- CIRCLE -->
-            <div class="text-center circle_box">
-                <i v-for="slide in slides" :key="slide.id" :class="slide.id == currentId? 'active':'' " class="fas fa-circle" @click="changeSlide(slide.id)"></i>
-            </div>
-            <!-- /CIRCLE -->
+        <!-- TITLES -->
+        <div class="text-center">
+            <h2>Testimonials</h2>
+            <h3>Why do people love me?</h3>
         </div>
+        <!-- /TITLES -->
+
+        <!-- SLIDER -->
+        <div class="d-flex justify-content-center slider">
+            <!-- BEFORE SLIDE -->
+            <div class="slide hidden_991px" @click="changeSlide(slides[beforeId].id)">
+                <h4>{{ slides[beforeId].title }}</h4>
+                <p>{{ slides[beforeId].text }}</p>
+                <div class="d-flex">
+                    <img :src="slides[beforeId].avatarImage" :alt="slides[beforeId].avatarName">
+                    <div>
+                        <h5>{{ slides[beforeId].avatarName }}</h5>
+                        <h6>{{ slides[beforeId].avatarTask }}</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- /BEFORE SLIDE -->
+
+            <!-- CURRENT SLIDE -->
+            <div class="slide">
+                <h4>{{ slides[currentId].title }}</h4>
+                <p>{{ slides[currentId].text }}</p>
+                <div class="d-flex">
+                    <img :src="slides[currentId].avatarImage" :alt="slides[currentId].avatarName">
+                    <div>
+                        <h5>{{ slides[currentId].avatarName }}</h5>
+                        <h6>{{ slides[currentId].avatarTask }}</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- /CURRENT SLIDE -->
+
+            <!-- AFTER SLIDE -->
+            <div class="slide hidden_991px" @click="changeSlide(slides[afterId].id)">
+                <h4>{{ slides[afterId].title }}</h4>
+                <p>{{ slides[afterId].text }}</p>
+                <div class="d-flex">
+                    <img :src="slides[afterId].avatarImage" :alt="slides[afterId].avatarName">
+                    <div>
+                        <h5>{{ slides[afterId].avatarName }}</h5>
+                        <h6>{{ slides[afterId].avatarTask }}</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- /AFTER SLIDE -->
+        </div>
+        <!-- SLIDER -->
+
+        <!-- CIRCLE -->
+        <div class="text-center circle_box">
+            <i v-for="slide in slides" :key="slide.id" :class="slide.id == currentId? 'active':'' " class="fas fa-circle" @click="changeSlide(slide.id)"></i>
+        </div>
+        <!-- /CIRCLE -->
     </section>
 </template>
 
@@ -122,7 +120,7 @@ export default {
     @import '../assets/style/mixins.scss';
 
     section {
-        padding: 30px 0;
+        padding: 30px 20px;
         background-color: $bg-testimonials;
 
         div {
