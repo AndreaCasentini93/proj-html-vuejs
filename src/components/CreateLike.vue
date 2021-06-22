@@ -6,6 +6,7 @@
                     <div class="row">
                         <!-- COLUMN LEFT -->
                         <div class="col-12 col-md-6 text-center column_left">
+                            <img src="../assets/images/artist-quote-icon.png" alt="image quote">
                             <h3>I coach and mentor visual artists, like you, to Create Like You Mean It</h3>
                             <h2>Martin Garrix</h2>
                         </div>
@@ -46,6 +47,11 @@ export default {
 
     .column_left {
         padding: 0 40px;
+
+        img {
+            width: 35px;
+            margin-bottom: 20px
+        }
 
         h2 {
             @include section-title-40px;

@@ -9,7 +9,7 @@
         <!-- /CREATE LIKES -->
 
         <!-- YOUTUBE -->
-        <section>YOUTUBE</section>
+        <Youtube />
         <!-- /YOUTUBE -->
 
         <!-- TESTIMONIALS -->
@@ -37,12 +37,14 @@
 <script>
 import ArtistCoaching from './ArtistCoaching.vue';
 import CreateLike from './CreateLike.vue';
+import Youtube from './Youtube.vue';
 
 export default {
     name: 'Main',
     components: {
         ArtistCoaching,
-        CreateLike
+        CreateLike,
+        Youtube
     }
 }
 </script>
