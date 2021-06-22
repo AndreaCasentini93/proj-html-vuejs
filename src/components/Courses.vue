@@ -15,7 +15,9 @@
             <!-- /TITLE -->
 
             <!-- CARDS -->
-            <Card />
+            <div class="row courses_cards">
+                <Card v-for="card,index in cards" :key="index" class="col-12 col-md-6 col-lg-3" :card="sindleCard"/>
+            </div>
             <!-- /CARDS -->
 
             <!-- BUTTON -->
@@ -34,6 +36,68 @@ export default {
     name: 'Courses',
     components: {
         Card
+    },
+    data: function() {
+        return {
+            cards: [
+                {
+                    title: 'The Acrylic Painting Accademy',
+                    image: require('../assets/images/artist-course-08-480x480.jpg'),
+                    price: '&#x24;18.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                },
+                {
+                    title: 'Drawing and Shading: Complete Course',
+                    image: require('../assets/images/artist-course-07-480x480.jpg'),
+                    price: '&#x24;21.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                },
+                {
+                    title: 'The Color Theory for Digital Artist',
+                    image: require('../assets/images/artist-course-06-480x480.jpg'),
+                    price: '&#x24;19.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                },
+                {
+                    title: 'Ultimate Guide to Digital Sketching for Beginner',
+                    image: require('../assets/images/artist-course-05-480x480.jpg'),
+                    price: '&#x24;35.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                },
+                {
+                    title: 'Portrait Drawing The Smart Way',
+                    image: require('../assets/images/artist-course-04-480x480.jpg'),
+                    price: '&#x24;19.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                },
+                {
+                    title: 'Mastering Watercolor Painting from Beginner',
+                    image: require('../assets/images/artist-course-03-480x480.jpg'),
+                    price: '&#x24;19.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                },
+                {
+                    title: 'The Artist & Science of Drawing',
+                    image: require('../assets/images/artist-course-02-480x480.jpg'),
+                    price: '&#x24;25.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                },
+                {
+                    title: 'The Colored Pencil Drawing Course',
+                    image: require('../assets/images/artist-course-01-480x480.jpg'),
+                    price: '&#x24;22.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                }
+            ]
+        }
     }
 }
 </script>
