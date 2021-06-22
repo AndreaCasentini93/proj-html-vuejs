@@ -10,6 +10,7 @@
 
             <!-- SLIDER -->
             <div class="d-flex slider">
+                <!-- BEFORE SLIDE -->
                 <div class="slide" @click="changeSlide(slides[beforeId].id)">
                     <h4>{{ slides[beforeId].title }}</h4>
                     <p>{{ slides[beforeId].text }}</p>
@@ -21,6 +22,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- /BEFORE SLIDE -->
+
+                <!-- CURRENT SLIDE -->
                 <div class="slide">
                     <h4>{{ slides[currentId].title }}</h4>
                     <p>{{ slides[currentId].text }}</p>
@@ -32,6 +36,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- /CURRENT SLIDE -->
+
+                <!-- AFTER SLIDE -->
                 <div class="slide" @click="changeSlide(slides[afterId].id)">
                     <h4>{{ slides[afterId].title }}</h4>
                     <p>{{ slides[afterId].text }}</p>
@@ -43,8 +50,15 @@
                         </div>
                     </div>
                 </div>
+                <!-- /AFTER SLIDE -->
             </div>
             <!-- SLIDER -->
+
+            <!-- CIRCLE -->
+            <div class="text-center circle_box">
+                <i v-for="slide in slides" :key="slide.id" :class="slide.id == currentId? 'active':'' " class="fas fa-circle" @click="changeSlide(slide.id)"></i>
+            </div>
+            <!-- /CIRCLE -->
         </div>
     </section>
 </template>
@@ -176,6 +190,26 @@ export default {
                 h6 {
                     font-size: 13px;
                     color: $base-color;
+                }
+            }
+        }
+
+        .circle_box {
+            margin-top: 20px;
+
+            i {
+                font-size: 6px;
+                margin: 0 5px;
+                cursor: pointer;
+                opacity: .3;
+                @include transition-type-1(font-sixe);
+                @include transition-type-1(opacity);
+
+
+                &:hover,
+                &.active {
+                    font-size: 8px;
+                    opacity: 1;
                 }
             }
         }
