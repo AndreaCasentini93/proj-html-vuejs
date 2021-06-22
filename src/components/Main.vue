@@ -1,12 +1,47 @@
 <template>
-    <main class="d-flex justify-content-center align-items-center">
-        CONTENUTO DELLA PAGINA
+    <main>
+        <!-- ARTIST COACHING -->
+        <ArtistCoaching />
+        <!-- /ARTIST COACHING -->
+
+        <!-- CREATE LIKE -->
+        <section>CREATE LIKE</section>
+        <!-- /CREATE LIKE -->
+
+        <!-- YOUTUBE -->
+        <section>YOUTUBE</section>
+        <!-- /YOUTUBE -->
+
+        <!-- TESTIMONIALS -->
+        <section>TESTIMONIALS</section>
+        <!-- /TESTIMONIALS -->
+
+        <!-- COURSES -->
+        <section>ONLINE COURSES</section>
+        <!-- /COURSES -->
+
+        <!-- ARTICLES -->
+        <section>ARTICLES</section>
+        <!-- /ARTICLES -->
+
+        <!-- EVENTS -->
+        <section>EVENTS</section>
+        <!-- /EVENTS -->
+
+        <!-- NEWSLETTER -->
+        <section>NEWSLETTER</section>
+        <!-- /NEWSLETTER -->
     </main>
 </template>
 
 <script>
+import ArtistCoaching from './ArtistCoaching.vue'
+
 export default {
-    name: 'Main'
+    name: 'Main',
+    components: {
+        ArtistCoaching
+    }
 }
 </script>
 
@@ -14,12 +49,5 @@ export default {
     @import '../assets/style/variables.scss';
     @import '../assets/style/mixins.scss';
 
-    main {
-        width: 100%;
-        height: 150px;
-        font-size: 30px;
-        font-weight: 700;
-        color: white;
-        background-color: black;
-    }
+
 </style>

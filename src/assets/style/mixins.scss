@@ -51,8 +51,13 @@
 }
 
 // Section Title
-@mixin section-title {
+@mixin section-title-40px {
     font-family: $title-font;
     font-size: 40px;
+    color: $title-color;
+}
+@mixin section-title-35px {
+    font-family: $title-font;
+    font-size: 35px;
     color: $title-color;
 }

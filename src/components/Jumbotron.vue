@@ -133,7 +133,7 @@ export default {
 
         div {
             h2 {
-                @include section-title;
+                @include section-title-40px;
             }
 
             h3 {
