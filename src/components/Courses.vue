@@ -3,6 +3,7 @@
         <!-- DECORATIONS -->
         <img class="form_2_1" src="../assets/images/artist-shape-01.png" alt="form_2">
         <img class="form_2_2" src="../assets/images/artist-shape-01.png" alt="form_2">
+        <div class="text_decoration hidden_991px">Courses</div>
         <!-- /DECORATIONS -->
 
         <div class="container">
@@ -50,6 +51,17 @@ export default {
             width: 400px;
         }
 
+        .text_decoration {
+            position: absolute;
+            top: 55%;
+            right: -8%;
+            text-transform: uppercase;
+            font-size: 100px;
+            font-family: $decoration-font;
+            color: lighten($ashtag-color, 30%);
+            transform: rotate(90deg);
+        }
+
         .form_2_1 {
             bottom: 0;
             left: -15%;
@@ -84,5 +96,13 @@ export default {
                 }
             }
         }
+    }
+
+    @media screen and (max-width: 991px) {
+        
+        .hidden_991px {
+            display: none !important;
+        }
+
     }
 </style>
