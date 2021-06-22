@@ -12,11 +12,11 @@
         <!-- /DECORATIONS -->
 
         <!-- VIDEO -->
-        <a href="#" class="position-relative video_box">
+        <div href="#" class="position-relative video_box">
             <img class="video_youtube" src="../assets/images/artist-video-poster.jpg" alt="video youtube">
             <img class="logo_youtube" src="../assets/images/icon-youtube-play.png" alt="logo youtube">
             <div class="ring hidden_767px"></div>
-        </a>
+        </div>
         <!-- /VIDEO -->
     </section>
 </template>
@@ -65,12 +65,7 @@ export default {
 
         .video_box {
             width: 750px;
-            @include transition-type-1(opacity);
-
-            &:hover {
-                opacity: .7;
-                cursor: pointer;
-            }
+            cursor: pointer;
 
             .video_youtube {
                 width: 100%;
