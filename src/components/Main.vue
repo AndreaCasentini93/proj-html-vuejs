@@ -4,9 +4,9 @@
         <ArtistCoaching />
         <!-- /ARTIST COACHING -->
 
-        <!-- CREATE LIKE -->
-        <section>CREATE LIKE</section>
-        <!-- /CREATE LIKE -->
+        <!-- CREATE LIKES -->
+        <CreateLikes />
+        <!-- /CREATE LIKES -->
 
         <!-- YOUTUBE -->
         <section>YOUTUBE</section>
@@ -35,12 +35,14 @@
 </template>
 
 <script>
-import ArtistCoaching from './ArtistCoaching.vue'
+import ArtistCoaching from './ArtistCoaching.vue';
+import CreateLikes from './CreateLikes.vue';
 
 export default {
     name: 'Main',
     components: {
-        ArtistCoaching
+        ArtistCoaching,
+        CreateLikes
     }
 }
 </script>
@@ -48,6 +50,4 @@ export default {
 <style lang="scss" scoped>
     @import '../assets/style/variables.scss';
     @import '../assets/style/mixins.scss';
-
-
 </style>
