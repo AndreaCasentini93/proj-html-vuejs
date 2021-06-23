@@ -21,7 +21,7 @@
         <!-- /COURSES -->
 
         <!-- ARTICLES -->
-        <section>ARTICLES</section>
+        <Articles />
         <!-- /ARTICLES -->
 
         <!-- EVENTS -->
@@ -41,6 +41,7 @@ import Youtube from './Youtube.vue';
 import Testimonials from './Testimonials.vue';
 import Courses from './Courses.vue';
 import Newsletter from './Newsletter.vue';
+import Articles from './Articles.vue';
 
 export default {
     name: 'Main',
@@ -50,7 +51,8 @@ export default {
         Youtube,
         Testimonials,
         Courses,
-        Newsletter
+        Newsletter,
+        Articles
     },
     data: function() {
         return {
