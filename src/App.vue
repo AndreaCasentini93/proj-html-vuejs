@@ -129,6 +129,7 @@ export default {
   methods: {
     enterEmail: function(val) {
       this.userEmail = val;
+      console.log(this.userEmail);
     }
   }
 }
