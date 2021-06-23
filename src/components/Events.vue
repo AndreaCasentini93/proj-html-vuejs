@@ -26,6 +26,7 @@ export default {
 
     section {
         height: 600px;
+        overflow: hidden;
 
         & > img {
             position: absolute;
