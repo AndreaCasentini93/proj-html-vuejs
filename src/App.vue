@@ -11,6 +11,34 @@
     <!-- FOOTER -->
     <Footer :socials="manuSocials" :contacts="contactsMaxCoach" :explore="exploreLinks" :information="informationLinks"/>
     <!-- /FOOTER -->
+
+    <!-- FIXED -->
+    <div id="fixed_options" class="position-fixed">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fas fa-ruler-combined"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="far fa-life-ring"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-book"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <a href="#" id="fixed_arrow" class="position-fixed">&uarr;</a>
+    <!-- /FIXED -->
   </div>
 </template>
 
@@ -137,4 +165,49 @@ export default {
 
 <style lang="scss">
   @import './assets/style/general.scss';
+
+  #fixed_options {
+    top: 50px;
+    right: 0;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 1px lighten($base-color, 30%);
+    z-index: 3;
+    
+    ul {
+      li {
+        margin: 10px 0;
+
+        a {
+          color: $link-color;
+          @include transition-type-1(color);
+
+          &:hover {
+            color: lighten($link-color, 40%);
+          }
+        }
+      }
+    }
+  }
+  #fixed_arrow {
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: $ashtag-color;
+    @include transition-type-1(background-color);
+    z-index: 3;
+
+    &:hover {
+      background-color: lighten($ashtag-color, 20%);
+    }
+  }
 </style>
