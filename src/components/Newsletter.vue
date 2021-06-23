@@ -52,7 +52,7 @@ export default {
 
         h2 {
             margin: unset;
-            font-family: unset;
+            font-family: $newsletter-font;
         }
 
         form {
