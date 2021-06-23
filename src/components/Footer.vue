@@ -118,7 +118,7 @@ export default {
                     }
 
                     h4 {
-                        margin-bottom: 10px;
+                        margin-bottom: 20px;
                         font-size: 17px;
                         font-weight: 700;
                         color: $sub-title-color;
