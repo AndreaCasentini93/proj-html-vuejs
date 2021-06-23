@@ -11,11 +11,16 @@
 
         <div class="container">
             <!-- TITLE -->
-            <div>Title</div>
+            <div class="text-center">
+                <h2>Articles and Tips</h2>
+                <h3>Latest from the blog</h3>
+            </div>
             <!-- /TITLE -->
 
             <!-- CARDS -->
-            <div>Cards</div>
+            <div class="d-flex justify-content-center flex-wrap articles_cards">
+                <Card v-for="singleCard,index in cards" :key="index" class="col-12 col-md-6 col-lg-3" :card="singleCard"/>
+            </div>
             <!-- /CARDS -->
 
             <!-- GET INTO -->
@@ -28,8 +33,46 @@
 </template>
 
 <script>
+import Card from './Card.vue';
+
 export default {
-    name: 'Articles'
+    name: 'Articles',
+    components: {
+        Card
+    },
+    data: function() {
+        return {
+            cards: [
+                {
+                    title: '',
+                    image: require('../assets/images/artist-course-08-480x480.jpg'),
+                    subTitle: '',
+                    classIcon1: '',
+                    classIcon2: '',
+                    textIcon1: '',
+                    textIcon2: ''
+                },
+                {
+                    title: '',
+                    image: require('../assets/images/artist-course-07-480x480.jpg'),
+                    subTitle: '',
+                    classIcon1: '',
+                    classIcon2: '',
+                    textIcon1: '',
+                    textIcon2: ''
+                },
+                {
+                    title: '',
+                    image: require('../assets/images/artist-course-06-480x480.jpg'),
+                    subTitle: '',
+                    classIcon1: '',
+                    classIcon2: '',
+                    textIcon1: '',
+                    textIcon2: ''
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -38,7 +81,7 @@ export default {
     @import '../assets/style/mixins.scss';
 
     section {
-        height: 600px;
+        padding: 60px 0;
         background-color: $bg-articles;
         overflow: hidden;
         z-index: -1;
@@ -79,7 +122,22 @@ export default {
         .container {
             z-index: 1;
 
+            div {
+                h2 {
+                    @include section-title-35px;
+                }
+
+                h3 {
+                    line-height: 1.5;
+                    margin-bottom: 50px;
+                    font-size: 25px;
+                    font-weight: 700;
+                    color: $sub-title-color;
+                }
+            }
+
             .get_into {
+                margin-top: 60px;
                 font-size: 13px;
                 color: $base-color;
 

@@ -1,7 +1,7 @@
 <template>
     <div class="single_card">
         <img :src="card.image" :alt="card.title">
-        <h5>&#xFF04;{{ card.subTitle }}</h5>
+        <h5>{{ card.subTitle }}</h5>
         <h4>{{ card.title }}</h4>
         <div class="d-flex align-items-center icon_box">
             <i :class="card.classIcon1"></i><span>{{ card.textIcon1 }}</span>
@@ -62,6 +62,33 @@ export default {
                     margin-right: 10px;
                 }
             }
+        }
+
+    }
+
+    // ARTICLES CARDS
+    .articles_cards {
+        
+        .single_card {
+            margin: 0 20px;
+
+            img {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            &:first-of-type {
+                color: red;
+            }
+
+            &:nth-of-type(2) {
+                color: blue;
+            }
+
+            &:last-of-type {
+                color: green;
+            }
+            
         }
 
     }

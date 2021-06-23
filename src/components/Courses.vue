@@ -43,7 +43,7 @@ export default {
                 {
                     title: 'The Acrylic Painting Accademy',
                     image: require('../assets/images/artist-course-08-480x480.jpg'),
-                    subTitle: '18.00',
+                    subTitle: '$18.00',
                     classIcon1: 'far fa-file-alt',
                     classIcon2: 'fas fa-gamepad',
                     textIcon1: '4 Lessons',
@@ -52,7 +52,7 @@ export default {
                 {
                     title: 'Drawing and Shading: Complete Course',
                     image: require('../assets/images/artist-course-07-480x480.jpg'),
-                    subTitle: '21.00',
+                    subTitle: '$21.00',
                     classIcon1: 'far fa-file-alt',
                     classIcon2: 'fas fa-gamepad',
                     textIcon1: '14 Lessons',
@@ -61,7 +61,7 @@ export default {
                 {
                     title: 'The Color Theory for Digital Artist',
                     image: require('../assets/images/artist-course-06-480x480.jpg'),
-                    subTitle: '19.00',
+                    subTitle: '$19.00',
                     classIcon1: 'far fa-file-alt',
                     classIcon2: 'fas fa-gamepad',
                     textIcon1: '7 Lessons',
@@ -70,7 +70,7 @@ export default {
                 {
                     title: 'Ultimate Guide to Digital Sketching for Beginner',
                     image: require('../assets/images/artist-course-05-480x480.jpg'),
-                    subTitle: '35.00',
+                    subTitle: '$35.00',
                     classIcon1: 'far fa-file-alt',
                     classIcon2: 'fas fa-gamepad',
                     textIcon1: '14 Lessons',
@@ -79,7 +79,7 @@ export default {
                 {
                     title: 'Portrait Drawing The Smart Way',
                     image: require('../assets/images/artist-course-04-480x480.jpg'),
-                    subTitle: '19.00',
+                    subTitle: '$19.00',
                     classIcon1: 'far fa-file-alt',
                     classIcon2: 'fas fa-gamepad',
                     textIcon1: '2 Lessons',
@@ -88,7 +88,7 @@ export default {
                 {
                     title: 'Mastering Watercolor Painting from Beginner',
                     image: require('../assets/images/artist-course-03-480x480.jpg'),
-                    subTitle: '19.00',
+                    subTitle: '$19.00',
                     classIcon1: 'far fa-file-alt',
                     classIcon2: 'fas fa-gamepad',
                     textIcon1: '9 Lessons',
@@ -97,7 +97,7 @@ export default {
                 {
                     title: 'The Artist & Science of Drawing',
                     image: require('../assets/images/artist-course-02-480x480.jpg'),
-                    subTitle: '25.00',
+                    subTitle: '$25.00',
                     classIcon1: 'far fa-file-alt',
                     classIcon2: 'fas fa-gamepad',
                     textIcon1: '4 Lessons',
@@ -106,7 +106,7 @@ export default {
                 {
                     title: 'The Colored Pencil Drawing Course',
                     image: require('../assets/images/artist-course-01-480x480.jpg'),
-                    subTitle: '22.00',
+                    subTitle: '$22.00',
                     classIcon1: 'far fa-file-alt',
                     classIcon2: 'fas fa-gamepad',
                     textIcon1: '6 Lessons',
