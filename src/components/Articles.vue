@@ -44,31 +44,31 @@ export default {
         return {
             cards: [
                 {
-                    title: '',
-                    image: require('../assets/images/artist-course-08-480x480.jpg'),
-                    subTitle: '',
-                    classIcon1: '',
-                    classIcon2: '',
-                    textIcon1: '',
-                    textIcon2: ''
+                    title: 'Brush Strokes Energize Trees in Paintings',
+                    image: require('../assets/images/artist-blog-03-480x356.jpeg'),
+                    subTitle: 'Artist',
+                    classIcon1: 'far fa-calendar',
+                    classIcon2: 'far fa-eye',
+                    textIcon1: 'May 15, 2020',
+                    textIcon2: '688 views'
                 },
                 {
-                    title: '',
-                    image: require('../assets/images/artist-course-07-480x480.jpg'),
-                    subTitle: '',
-                    classIcon1: '',
-                    classIcon2: '',
-                    textIcon1: '',
-                    textIcon2: ''
+                    title: 'Connection Between Self-Portraits and Identity',
+                    image: require('../assets/images/artist-blog-02-500x680.jpg'),
+                    subTitle: 'Artist',
+                    classIcon1: 'far fa-calendar',
+                    classIcon2: 'far fa-eye',
+                    textIcon1: 'May 15, 2020',
+                    textIcon2: '397 views'
                 },
                 {
-                    title: '',
-                    image: require('../assets/images/artist-course-06-480x480.jpg'),
-                    subTitle: '',
-                    classIcon1: '',
-                    classIcon2: '',
-                    textIcon1: '',
-                    textIcon2: ''
+                    title: 'Pocket-Sized Notebooks Hold Miniature Paintings',
+                    image: require('../assets/images/artist-blog-01-480x356.jpg'),
+                    subTitle: 'Artist',
+                    classIcon1: 'far fa-calendar',
+                    classIcon2: 'far fa-eye',
+                    textIcon1: 'May 15, 2020',
+                    textIcon2: '603 views'
                 }
             ]
         }
