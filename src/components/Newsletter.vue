@@ -1,5 +1,11 @@
 <template>
-    <section>
+    <section class="position-relative">
+        <!-- DECORATIONS -->
+        <img class="color_1" src="../assets/images/artist-shape-color-paint-top-left.png" alt="color_1">
+        <img class="color_2" src="../assets/images/artist-shape-color-paint-bottom-right.png" alt="color_2">
+        <!-- /DECORATIONS -->
+
+        <!-- ENTER EMAIL -->
         <div class="container d-flex justify-content-around align-items-center flex-wrap">
             <div class="d-flex align-items-center text-end">
                 <h2>Newsletter to get<br>in touch</h2>
@@ -12,6 +18,7 @@
                 </div>
             </form>
         </div>
+        <!-- /ENTER EMAIL -->
     </section>
 </template>
 
@@ -46,19 +53,34 @@ export default {
     @import '../assets/style/mixins.scss';
 
     section {
-        padding: 50px 0;
+        padding: 40px 0;
         color: #FFFFFF;
         background-color: $bg-newsletter;
+        z-index: -1;
+
+        & > img {
+            position: absolute;
+            height: 100%;
+        }
+
+        .color_1 {
+            top: 0;
+            left: 0;
+        }
+        .color_2 {
+            top: 0;
+            right: 0;
+        }
 
         h2 {
             margin: unset;
+            font-size: 25px;
             font-family: $newsletter-font;
         }
 
         form {
             padding: 1px 0;
-            margin-top: 10px;
-            margin-left: 30px;
+            margin: 20px;
             border-bottom: 1px solid #FFFFFF;
 
             .error {
@@ -98,6 +120,10 @@ export default {
 
         input {
             width: 200px !important;
+        }
+
+        section > img {
+            display: none !important;
         }
 
     }
