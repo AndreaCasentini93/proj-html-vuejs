@@ -87,7 +87,6 @@ export default {
 
             img {
                 max-width: 100%;
-                margin-bottom: 20px;
             }
 
             &:first-of-type,
@@ -100,6 +99,7 @@ export default {
 
                 img {
                     margin: 0;
+                    margin-bottom: 20px;
                 }
 
                 h5 {
@@ -143,7 +143,7 @@ export default {
             }
 
             &:nth-of-type(2) {
-                height: unset;
+                align-self: center;
                 color: #FFFFFF;
 
                 .wrapper {
@@ -158,6 +158,7 @@ export default {
                 }
 
                 img {
+                    display: block;
                     width: 100%;
                 }
 
