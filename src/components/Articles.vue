@@ -153,8 +153,29 @@ export default {
     }
 
     @media screen and (max-width: 991px) {
+        
         .hidden_991px {
-            display: none;
+            display: none !important;
+        }
+
+        h2 {
+            font-size: 30px !important;
+        }
+
+        h3 {
+            font-size: 20px !important;
+        }
+
+        h4 {
+            font-size: 13px !important;
+        }
+
+        h5 {
+            font-size: 12px !important;
+        }
+
+        p {
+            font-size: 11px !important;
         }
     }
 </style>

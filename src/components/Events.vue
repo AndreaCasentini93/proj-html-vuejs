@@ -5,10 +5,11 @@
             <path class="elementor-shape-fill" d="M139.374 198.088c16.328 8.906 51.35-1.087 58.304-39.038 7.15-39.022-13.182-40.052-9.633-54.248 14.243-21.15 16.782-48.14 2.028-64.387-36.503-38.024-45.629 7.604-76.048-20.28C101.727 7.837 83.1-6.735 56.23 3.405 18.239 17.74 27.33 47.659 27.33 69.313c0 7.624-24.216 21.957-26.87 41.573-3.346 24.734 12.168 57.29 26.87 68.443 23.322 26.363 59.318 20.28 75.541 11.154 13.931-7.836 25.35 1.52 36.503 7.605z"/>
         </svg>
         <img class="jagged_circle" src="../assets/images/maxcoach-shape-13.png" alt="jagged_circle">
-        <img class="form_2" src="../assets/images/artist-shape-02.png" alt="form_2">
-        <div class="text_decoration">Events</div>
+        <img class="form_2 hidden_991px" src="../assets/images/artist-shape-02.png" alt="form_2">
+        <div class="text_decoration hidden_991px">Events</div>
         <!-- /DECORATIONS -->
 
+        <!-- CONTAINER -->
         <div class="container">
             <div class="row">
                 <div class="col-10 offset-1">
@@ -29,6 +30,7 @@
                 </div>
             </div>
         </div>
+        <!-- /CONTAINER -->
     </section>
 </template>
 
@@ -44,40 +46,40 @@ export default {
         return {
             cards: [
                 {
-                    title: 'The Acrylic Painting Accademy',
-                    image: require('../assets/images/artist-course-08-480x480.jpg'),
-                    subTitle: '$18.00',
-                    classIcon1: 'far fa-file-alt',
-                    classIcon2: 'fas fa-gamepad',
-                    textIcon1: '4 Lessons',
-                    textIcon2: '50 Students'
+                    title: 'Storytelling Workshop',
+                    image: require('../assets/images/artist-event-04-250x300.jpg'),
+                    subTitle: 'NOV 22, 2020',
+                    classIcon1: 'fas fa-map-marker-alt',
+                    classIcon2: '',
+                    textIcon1: 'Texas, US',
+                    textIcon2: ''
                 },
                 {
-                    title: 'Drawing and Shading: Complete Course',
-                    image: require('../assets/images/artist-course-07-480x480.jpg'),
-                    subTitle: '$21.00',
-                    classIcon1: 'far fa-file-alt',
-                    classIcon2: 'fas fa-gamepad',
-                    textIcon1: '14 Lessons',
-                    textIcon2: '50 Students'
+                    title: 'Painting Art Contest 2020',
+                    image: require('../assets/images/artist-event-03-250x300.jpg'),
+                    subTitle: 'OCT 10, 2020',
+                    classIcon1: 'fas fa-map-marker-alt',
+                    classIcon2: '',
+                    textIcon1: 'New York, US',
+                    textIcon2: ''
                 },
                 {
-                    title: 'The Color Theory for Digital Artist',
-                    image: require('../assets/images/artist-course-06-480x480.jpg'),
-                    subTitle: '$19.00',
-                    classIcon1: 'far fa-file-alt',
-                    classIcon2: 'fas fa-gamepad',
-                    textIcon1: '7 Lessons',
-                    textIcon2: '50 Students'
+                    title: 'International Art Fair 2020',
+                    image: require('../assets/images/artist-event-02-250x300.jpg'),
+                    subTitle: 'NOV 23, 2020',
+                    classIcon1: 'fas fa-map-marker-alt',
+                    classIcon2: '',
+                    textIcon1: 'Hamburg, Germany',
+                    textIcon2: ''
                 },
                 {
-                    title: 'Ultimate Guide to Digital Sketching for Beginner',
-                    image: require('../assets/images/artist-course-05-480x480.jpg'),
-                    subTitle: '$35.00',
-                    classIcon1: 'far fa-file-alt',
-                    classIcon2: 'fas fa-gamepad',
-                    textIcon1: '14 Lessons',
-                    textIcon2: '50 Students'
+                    title: 'Street Performance: Call for Artist',
+                    image: require('../assets/images/artist-event-01-250x300.jpg'),
+                    subTitle: 'DEC 15, 2020',
+                    classIcon1: 'fas fa-map-marker-alt',
+                    classIcon2: '',
+                    textIcon1: 'Illinois, US',
+                    textIcon2: ''
                 }
             ]
         }
@@ -144,6 +146,33 @@ export default {
                 }
             }
 
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        
+        .hidden_991px {
+            display: none !important;
+        }
+
+        h2 {
+            font-size: 30px !important;
+        }
+
+        h3 {
+            font-size: 20px !important;
+        }
+
+        h4 {
+            font-size: 13px !important;
+        }
+
+        h5 {
+            font-size: 12px !important;
+        }
+
+        p {
+            font-size: 11px !important;
         }
     }
 
