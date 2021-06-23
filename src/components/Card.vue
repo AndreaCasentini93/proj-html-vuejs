@@ -192,29 +192,32 @@ export default {
         }
     }
     @media screen and (max-width: 767px) {
+        .articles_card {
 
-        .single_card:nth-of-type(2) {
-            h5 {
-                font-size: 13px !important;
-            }
+            .single_card:nth-of-type(2) {
+                h5 {
+                    font-size: 13px !important;
+                }
 
-            h4 {
-                font-size: 18px !important;
-            }
+                h4 {
+                    font-size: 18px !important;
+                }
 
-            .icon_box {
-                font-size: 12px !important;
-
-                i {
+                .icon_box {
                     font-size: 12px !important;
+
+                    i {
+                        font-size: 12px !important;
+                    }
                 }
             }
+
         }
 
     }
 
     // EVENTS CARDS
-    .events_cardS {
+    .events_cards {
 
         .single_card {
             display: flex;
@@ -230,11 +233,58 @@ export default {
             }
 
             .wrapper {
-                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 30px;
+            }
+
+            h5 {
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 600;
+                color: $base-color;
+            }
+
+            h4 {
+                margin-bottom: 10px;
+                font-size: 18px;
+                font-weight: 700;
+                color: $sub-title-color;
+            }
+
+            .icon_box {
+                font-size: 13px;
+                vertical-align: middle;
+                color: $base-color;
+
+                i {
+                    margin-right: 5px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .events_cards {
+
+            h5 {
+                font-size: 12px !important;
+            }
+
+            h4 {
+                font-size: 15px !important;
+            }
+
+            .icon_box {
+                font-size: 10px !important;
+
+                i {
+                    font-size: 10px !important;
+                }
             }
 
         }
-
     }
 
 </style>

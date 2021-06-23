@@ -13,20 +13,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-10 offset-1">
-                    <div>
-                        <!-- TITLE -->
-                        <div class="text-center title">
-                            <h2>Artist coaching</h2>
-                            <h3>Latest Online Courses</h3>
-                        </div>
-                        <!-- /TITLE -->
-
-                        <!-- CARDS -->
-                        <div class="row events_cardS">
-                            <Card v-for="singleCard,index in cards" :key="index" class="col-12 col-md-6" :card="singleCard"/>
-                        </div>
-                        <!-- /CARDS -->
+                    <!-- TITLE -->
+                    <div class="text-center title">
+                        <h2>Upcoming Events</h2>
+                        <h3>Let's Work Together</h3>
                     </div>
+                    <!-- /TITLE -->
+
+                    <!-- CARDS -->
+                    <div class="row events_cards">
+                        <Card v-for="singleCard,index in cards" :key="index" class="col-12 col-md-6" :card="singleCard"/>
+                    </div>
+                    <!-- /CARDS -->
                 </div>
             </div>
         </div>
@@ -92,7 +90,7 @@ export default {
     @import '../assets/style/mixins.scss';
 
     section {
-        padding: 60px 0;
+        padding: 60px 20px;
         overflow: hidden;
 
         & > img {
