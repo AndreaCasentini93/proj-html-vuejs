@@ -191,7 +191,6 @@ export default {
             }
         }
     }
-
     @media screen and (max-width: 767px) {
 
         .single_card:nth-of-type(2) {
@@ -210,6 +209,30 @@ export default {
                     font-size: 12px !important;
                 }
             }
+        }
+
+    }
+
+    // EVENTS CARDS
+    .events_cardS {
+
+        .single_card {
+            display: flex;
+
+            &:nth-of-type(3),
+            &:nth-of-type(4) {
+                flex-direction: row-reverse;
+            }
+
+            img {
+                max-width: 50%;
+                margin-bottom: 50px;
+            }
+
+            .wrapper {
+                padding: 40px;
+            }
+
         }
 
     }

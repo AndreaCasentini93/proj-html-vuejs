@@ -9,17 +9,79 @@
         <div class="text_decoration">Events</div>
         <!-- /DECORATIONS -->
 
-        <!-- CARDS -->
-        <div class="events_card">
-            
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <div>
+                        <!-- TITLE -->
+                        <div class="text-center title">
+                            <h2>Artist coaching</h2>
+                            <h3>Latest Online Courses</h3>
+                        </div>
+                        <!-- /TITLE -->
+
+                        <!-- CARDS -->
+                        <div class="row events_cardS">
+                            <Card v-for="singleCard,index in cards" :key="index" class="col-12 col-md-6" :card="singleCard"/>
+                        </div>
+                        <!-- /CARDS -->
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /CARDS -->
     </section>
 </template>
 
 <script>
+import Card from './Card.vue';
+
 export default {
-    name: 'Events'
+    name: 'Events',
+    components: {
+        Card
+    },
+    data: function() {
+        return {
+            cards: [
+                {
+                    title: 'The Acrylic Painting Accademy',
+                    image: require('../assets/images/artist-course-08-480x480.jpg'),
+                    subTitle: '$18.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                    textIcon1: '4 Lessons',
+                    textIcon2: '50 Students'
+                },
+                {
+                    title: 'Drawing and Shading: Complete Course',
+                    image: require('../assets/images/artist-course-07-480x480.jpg'),
+                    subTitle: '$21.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                    textIcon1: '14 Lessons',
+                    textIcon2: '50 Students'
+                },
+                {
+                    title: 'The Color Theory for Digital Artist',
+                    image: require('../assets/images/artist-course-06-480x480.jpg'),
+                    subTitle: '$19.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                    textIcon1: '7 Lessons',
+                    textIcon2: '50 Students'
+                },
+                {
+                    title: 'Ultimate Guide to Digital Sketching for Beginner',
+                    image: require('../assets/images/artist-course-05-480x480.jpg'),
+                    subTitle: '$35.00',
+                    classIcon1: 'far fa-file-alt',
+                    classIcon2: 'fas fa-gamepad',
+                    textIcon1: '14 Lessons',
+                    textIcon2: '50 Students'
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -28,7 +90,7 @@ export default {
     @import '../assets/style/mixins.scss';
 
     section {
-        height: 600px;
+        padding: 60px 0;
         overflow: hidden;
 
         & > img {
@@ -64,6 +126,24 @@ export default {
             color: lighten($ashtag-color, 35%);
             transform: rotate(90deg);
             z-index: -1;
+        }
+
+        .container {
+
+            .title {
+                h2 {
+                    @include section-title-35px;
+                }
+
+                h3 {
+                    line-height: 1;
+                    margin-bottom: 50px;
+                    font-size: 25px;
+                    font-weight: 700;
+                    color: $sub-title-color;
+                }
+            }
+
         }
     }
 
