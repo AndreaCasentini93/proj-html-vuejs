@@ -10,7 +10,9 @@
         <!-- /DECORATIONS -->
 
         <!-- CARDS -->
-        
+        <div class="events_card">
+            
+        </div>
         <!-- /CARDS -->
     </section>
 </template>

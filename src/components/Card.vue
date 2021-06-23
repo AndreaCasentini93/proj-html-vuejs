@@ -91,7 +91,7 @@ export default {
 
             &:first-of-type,
             &:last-of-type {
-                width: 180px;
+                width: 250px;
 
                 .wrapper {
                     padding: 10px;
@@ -104,30 +104,30 @@ export default {
 
                 h5 {
                     text-transform: uppercase;
-                    font-size: 12px;
+                    font-size: 13px;
                     font-weight: 600;
                     color: $base-color;
                 }
 
                 h4 {
                     margin-bottom: 10px;
-                    font-size: 14px;
+                    font-size: 18px;
                     font-weight: 700;
                     color: $sub-title-color;
                 }
 
                 .icon_box {
-                    font-size: 9px;
+                    font-size: 12px;
                     vertical-align: middle;
                     color: $base-color;
 
                     i {
                         margin-right: 5px;
-                        font-size: 10px;
+                        font-size: 12px;
                     }
 
                     span {
-                        margin-right: 15px;
+                        margin-right: 25px;
                     }
                 }
             }
@@ -164,32 +164,54 @@ export default {
 
                 h5 {
                     text-transform: uppercase;
-                    font-size: 13px;
+                    font-size: 15px;
                     margin-bottom: 8px;
                 }
 
                 h4 {
                     line-height: 1.5;
                     margin-bottom: 8px;
-                    font-size: 23px;
+                    font-size: 35px;
                     font-weight: 700;
                 }
 
                 .icon_box {
-                    font-size: 12px;
+                    font-size: 14px;
                     vertical-align: middle;
 
                     i {
                         margin-right: 5px;
-                        font-size: 12px;
+                        font-size: 14px;
                     }
 
                     span {
-                        margin-right: 10px;
+                        margin-right: 25px;
                     }
                 }
             }
         }
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .single_card:nth-of-type(2) {
+            h5 {
+                font-size: 13px !important;
+            }
+
+            h4 {
+                font-size: 18px !important;
+            }
+
+            .icon_box {
+                font-size: 12px !important;
+
+                i {
+                    font-size: 12px !important;
+                }
+            }
+        }
+
     }
 
 </style>

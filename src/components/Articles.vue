@@ -19,7 +19,7 @@
 
             <!-- CARDS -->
             <div class="d-flex justify-content-center flex-wrap articles_cards">
-                <Card v-for="singleCard,index in cards" :key="index" class="col-12 col-md-6 col-lg-3" :card="singleCard"/>
+                <Card v-for="singleCard,index in cards" :key="index" :card="singleCard"/>
             </div>
             <!-- /CARDS -->
 
@@ -91,8 +91,8 @@ export default {
 
         .cloud {
             position: absolute;
-            bottom: 8%;
-            right: 35%;
+            bottom: 7%;
+            right: 30%;
             transform: scale(.8);
         }
 
@@ -104,8 +104,8 @@ export default {
         }
 
         .dotted_circle {
-            top: 23%;
-            left: 38%;
+            top: 17%;
+            left: 32%;
             width: 120px
         }
 
