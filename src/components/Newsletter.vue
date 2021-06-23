@@ -56,7 +56,6 @@ export default {
         padding: 40px 0;
         color: #FFFFFF;
         background-color: $bg-newsletter;
-        z-index: -1;
 
         & > img {
             position: absolute;
@@ -76,12 +75,14 @@ export default {
             margin: unset;
             font-size: 25px;
             font-family: $newsletter-font;
+            z-index: 2;
         }
 
         form {
             padding: 1px 0;
             margin: 20px;
             border-bottom: 1px solid #FFFFFF;
+            z-index: 2;
 
             .error {
                 font-size: 17px;
