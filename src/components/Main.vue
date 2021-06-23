@@ -1,36 +1,13 @@
 <template>
     <main>
-        <!-- ARTIST COACHING -->
         <ArtistCoaching />
-        <!-- /ARTIST COACHING -->
-
-        <!-- CREATE LIKES -->
         <CreateLike />
-        <!-- /CREATE LIKES -->
-
-        <!-- YOUTUBE -->
         <Youtube />
-        <!-- /YOUTUBE -->
-
-        <!-- TESTIMONIALS -->
         <Testimonials />
-        <!-- /TESTIMONIALS -->
-
-        <!-- COURSES -->
         <Courses />
-        <!-- /COURSES -->
-
-        <!-- ARTICLES -->
         <Articles />
-        <!-- /ARTICLES -->
-
-        <!-- EVENTS -->
-        <section>EVENTS</section>
-        <!-- /EVENTS -->
-
-        <!-- NEWSLETTER -->
+        <Events />
         <Newsletter @userEmail="enterEmail"/>
-        <!-- /NEWSLETTER -->
     </main>
 </template>
 
@@ -40,8 +17,9 @@ import CreateLike from './CreateLike.vue';
 import Youtube from './Youtube.vue';
 import Testimonials from './Testimonials.vue';
 import Courses from './Courses.vue';
-import Newsletter from './Newsletter.vue';
 import Articles from './Articles.vue';
+import Events from './Events.vue';
+import Newsletter from './Newsletter.vue';
 
 export default {
     name: 'Main',
@@ -51,8 +29,9 @@ export default {
         Youtube,
         Testimonials,
         Courses,
-        Newsletter,
-        Articles
+        Articles,
+        Events,
+        Newsletter
     },
     data: function() {
         return {
