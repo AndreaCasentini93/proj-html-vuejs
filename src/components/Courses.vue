@@ -135,8 +135,7 @@ export default {
         .text_decoration {
             position: absolute;
             top: 45%;
-            right: -9.5%;
-            text-transform: uppercase;
+            right: -9%;
             font-size: 120px;
             font-family: $decoration-font;
             color: lighten($ashtag-color, 35%);

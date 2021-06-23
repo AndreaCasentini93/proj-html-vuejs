@@ -6,6 +6,7 @@
         </svg>
         <img class="jagged_circle" src="../assets/images/maxcoach-shape-13.png" alt="jagged_circle">
         <img class="form_2" src="../assets/images/artist-shape-02.png" alt="form_2">
+        <div class="text_decoration">Events</div>
         <!-- /DECORATIONS -->
 
         <!-- CARDS -->
@@ -50,6 +51,17 @@ export default {
             top: 13%;
             right: 0;
             width: 140px;
+        }
+
+        .text_decoration {
+            position: absolute;
+            top: 45%;
+            left: -6%;
+            font-size: 120px;
+            font-family: $decoration-font;
+            color: lighten($ashtag-color, 35%);
+            transform: rotate(90deg);
+            z-index: -1;
         }
     }
 
